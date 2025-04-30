@@ -156,9 +156,7 @@ p {
 }
 
 .circle:focus {
-    //outline: 2px solid var(--Orange);
-    background-color: white;
-    outline: none;
+    outline: 2px solid var(--Orange);
     outline-offset: -1px;
 
 }
