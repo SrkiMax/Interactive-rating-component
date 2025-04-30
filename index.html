@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Interactive rating component</title>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="bootstrap-5.3.5-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+
+
+</head>
+
+<body>
+
+  <main class="container">
+    <section class="rating-box">
+      <div class="star-div">
+        <img src="images/icon-star.svg" alt="orange star" class="star-img">
+      </div>
+      <h2 class="text-preset-1-bold">How did we do?</h2>
+      <p class="rating-box-text text-preset-4-regular">Please let us know how we did with your support request. All
+        feedback is appreciated
+        to help us improve our offering!</p>
+
+      <!-- Rating state start -->
+      <div class="rating-circles" role="radiogroup">
+        <div class="circle circle-1 text-preset-3-bold" data-rating="1" tabindex="0" role="radio" aria-checked="false"
+          aria-label="1 out of 5">1</div>
+        <div class="circle circle-2 text-preset-3-bold" data-rating="2" tabindex="0" role="radio" aria-checked="false"
+          aria-label="2 out of 5">2</div>
+        <div class="circle circle-3 text-preset-3-bold" data-rating="3" tabindex="0" role="radio" aria-checked="false"
+          aria-label="3 out of 5">3</div>
+        <div class="circle circle-4 text-preset-3-bold" data-rating="4" tabindex="0" role="radio" aria-checked="false"
+          aria-label="4 out of 5">4</div>
+        <div class="circle circle-5 text-preset-3-bold" data-rating="5" tabindex="0" role="radio" aria-checked="false"
+          aria-label="5 out of 5">5</div>
+      </div>
+      <button type="button" class="btn text-preset-5-semiBold" aria-label="Submit rating" disabled>SUBMIT</button>
+      <!-- Rating state end -->
+    </section>
+
+    <!-- Thank you state start -->
+    <section class="thankYou-box non-active">
+      <div class="thankYou-img">
+        <img src="images/illustration-thank-you.svg" alt="">
+      </div>
+      <div class="rating-info">
+        <span class="rating-text">You selected <span class="rating-digit">2</span> out of 5</span>
+
+      </div>
+
+      <h2 class="thankYou-title">Thank you!</h2>
+      <p class="thankYou-box-paragraph">We appreciate you taking the time to give a rating. If you ever need more
+        support,
+        don’t hesitate to get in touch!</p>
+
+    </section>
+    <!-- Thank you state end -->
+  </main>
+
+
+
+
+
+
+
+
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Srdjan Maksimovic</a>.
+  </div>
+  <script src="bootstrap-5.3.5-dist/js/bootstrap.min.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
